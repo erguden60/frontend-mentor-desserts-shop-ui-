@@ -5,8 +5,7 @@ Bu proje, Frontend Mentor platformundaki bir challenge'dan ilham alarak gelişti
 Amacım, Next.js ve CSS Modules kullanarak hem göze hoş gelen hem de kullanıcı dostu, responsive bir alışveriş sepeti deneyimi oluşturmaktı. Tasarımın şıklığına ve kodun temizliğine odaklandım.
 
 
-📸 ![dessert-shop-sepet-cart-uı](https://github.com/user-attachments/assets/57c942bb-4c76-470d-b261-40ccd216c38c)
-![dessert-shop-sepet-cart-uı](https://github.com/user-attachments/assets/3cf6af81-9734-4916-8b76-4f08791d6cbc)
+📸 ![dessert-shop-sepet-cart-uı](https://github.com/user-attachments/assets/dcdd15b7-5896-4456-a479-abfa7ea2d4c4)
 
 
 🚀 Canlı Demo:
