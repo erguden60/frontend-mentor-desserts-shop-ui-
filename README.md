@@ -8,9 +8,15 @@ Amacım, Next.js ve CSS Modules kullanarak hem göze hoş gelen hem de kullanıc
 📸 ![dessert-shop-sepet-cart-uı](https://github.com/user-attachments/assets/dcdd15b7-5896-4456-a479-abfa7ea2d4c4)
 
 
+
+
+
+
+
+
 🚀 Canlı Demo:
 Projeyi canlı olarak görmek ve denemek için:
-Canlı Demoyu Ziyaret Et →
+Canlı Demoyu Ziyaret Et → https://frontend-mentor-desserts-shop-ui.vercel.app/
 
 
 
