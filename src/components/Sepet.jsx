@@ -1,12 +1,12 @@
-// src/components/Sepet.jsx (ONAY BUTONU İŞLEVSELLİĞİ EKLENMİŞ TAM VERSİYON)
+// src/components/Sepet.jsx 
 
 import Image from "next/image";
 import styles from "./Sepet.module.css";
 
-// KRİTİK DÜZELTME: Dosya adı ve uzantısı doğru olmalı.
+
 import SepetUrunu from "./Sepeturun";
 
-// DEĞİŞİKLİK 1: onConfirmOrder fonksiyonunu prop olarak alıyoruz.
+
 export default function Sepet({ cartItems, onRemove, onConfirmOrder }) {
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const orderTotal = cartItems.reduce(
