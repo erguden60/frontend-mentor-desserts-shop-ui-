@@ -1,4 +1,4 @@
-// src/app/page.jsx (TÜM FONKSİYONLAR EKLENMİŞ, TAM VERSİYON)
+
 
 "use client";
 
@@ -14,9 +14,7 @@ export default function Home() {
   const [cartItems, setCartItems] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // 2. FONKSİYON TANIMLAMALARI (HATANIN KAYNAĞI BU BÖLÜMÜN EKSİK OLMASIYDI)
 
-  // Sepete ürün ekler veya miktarını artırır
   const handleAddToCart = (dessertToAdd) => {
     const itemInCart = cartItems.find(
       (item) => item.name === dessertToAdd.name
@@ -35,7 +33,7 @@ export default function Home() {
     }
   };
 
-  // Ürün miktarını azaltır, 1 ise sepetten çıkarır
+ 
   const handleDecreaseQuantity = (dessertToDecrease) => {
     const itemInCart = cartItems.find(
       (item) => item.name === dessertToDecrease.name
@@ -53,25 +51,25 @@ export default function Home() {
     }
   };
 
-  // Ürünü sepetten tamamen kaldırır
+  
   const handleRemoveFromCart = (itemName) => {
     setCartItems(cartItems.filter((item) => item.name !== itemName));
   };
 
-  // Siparişi onaylar ve onay modalını açar
+
   const handleConfirmOrder = () => {
     if (cartItems.length > 0) {
       setIsModalOpen(true);
     }
   };
 
-  // Yeni sipariş başlatır, sepeti ve modalı sıfırlar
+  
   const handleNewOrder = () => {
     setCartItems([]);
     setIsModalOpen(false);
   };
 
-  // 3. JSX RENDER BLOĞU
+
   return (
     <>
       <main className={styles.container}>
