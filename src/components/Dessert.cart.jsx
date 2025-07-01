@@ -1,6 +1,4 @@
-// src/components/DessertKarti.jsx (SYNTAX HATASI DÜZELTİLMİŞ)
 
-// DİKKAT: Bu import yolunun, stil dosyanızın gerçek adıyla eşleştiğinden emin olun!
 import styles from "./DessertCart.module.css";
 
 // --- İkon Bileşenleri ---
