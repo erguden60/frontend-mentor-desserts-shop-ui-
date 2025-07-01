@@ -1,9 +1,9 @@
-// src/components/OnayModali.jsx (EXPORT DEFAULT DÜZELTİLMİŞ)
+// src/components/OnayModali.jsx 
 
 import Image from "next/image";
 import styles from "./OnayModali.module.css";
 
-// DİKKAT: Fonksiyonun başında "export default" olduğundan emin olun.
+
 export default function OnayModali({ cartItems, onNewOrder }) {
   const orderTotal = cartItems.reduce(
     (sum, item) => sum + item.quantity * item.price,
