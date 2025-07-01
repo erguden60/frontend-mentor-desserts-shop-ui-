@@ -1,0 +1,62 @@
+/* src/app/globals.css */
+
+/* 1. Font'u import edelim (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+/* 2. CSS Değişkenleri (Renkler ve Fontlar) */
+:root {
+  /* Renkler */
+  --red: #c73b0f;
+  --green: #26a374;
+  --rose-50: #fcf8f6;
+  --rose-100: #f4eeeb;
+  --rose-300: #d8c2b3;
+  --rose-400: #b59f96;
+  --rose-500: #87635a;
+  --rose-900: #260f08;
+
+  /* Font Ailesi */
+  --font-family: "Red Hat Text", sans-serif;
+
+  /* Diğer Değişkenler */
+  --border-radius: 8px;
+}
+
+/* 3. Genel Sıfırlama ve Body Stilleri */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-family);
+  background-color: var(--rose-50); /* Projenin ana arka plan rengi */
+  color: var(--rose-900);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; /* Başlıklar kalın olsun */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  font-family: inherit; /* Butonlar da ana fontu kullansın */
+}

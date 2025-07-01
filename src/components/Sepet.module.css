@@ -1,0 +1,116 @@
+/* src/components/Sepet.module.css */
+
+/* Renkleri ve genel değişkenleri projenizin global CSS dosyasında veya burada tanımlayabilirsiniz. */
+:root {
+  --red: #c73b0f;
+  --green: #268b44;
+  --rose-50: #fff7f5;
+  --rose-100: #ffede8;
+  --rose-300: #fcc2b4;
+  --rose-400: #ad8a85;
+  --rose-500: #87635a;
+  --rose-900: #3e3230;
+}
+
+/* ANA KART KONTEYNERİ */
+.cartSection {
+  background-color: #ffffff; /* Kartın arka plan rengi */
+  padding: 24px;
+  border-radius: 12px; /* Yuvarlak köşeler */
+  width: 100%;
+  max-width: 420px; /* Kartın maksimum genişliği */
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* Kart içindeki ana bölümler arası boşluk (başlık, liste, toplam vs.) */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); /* İsteğe bağlı gölge */
+}
+
+/* SEPET BAŞLIĞI */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--red);
+  margin: 0;
+}
+
+/* ÜRÜN LİSTESİ */
+.itemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Her ürün satırı arasındaki dikey boşluk */
+  border-bottom: 1px solid var(--rose-100);
+  padding-bottom: 24px;
+}
+
+/* SİPARİŞ TOPLAMI BÖLÜMÜ */
+.orderTotal {
+  display: flex;
+  justify-content: space-between; /* "Order Total" ve fiyatı iki uca yaslar */
+  align-items: center;
+  font-size: 16px;
+  color: var(--rose-900);
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--rose-900);
+}
+
+/* CARBON NEUTRAL BİLGİ KUTUSU */
+.carbonNeutral {
+  background-color: var(--rose-50);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.carbonNeutral p {
+  margin: 0;
+  color: var(--rose-900);
+  font-weight: 500;
+}
+
+.carbonNeutral strong {
+  color: var(--green);
+}
+
+/* ONAY BUTONU */
+.confirmButton {
+  background-color: var(--red);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 16px;
+  border-radius: 50px; /* Tamamen yuvarlak kenarlar */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.confirmButton:hover {
+  background-color: #a52d04; /* Hover durumunda rengi koyulaştır */
+}
+
+/* BOŞ SEPET DURUMU */
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.emptyCart p {
+  color: var(--rose-500);
+  font-weight: 600;
+}

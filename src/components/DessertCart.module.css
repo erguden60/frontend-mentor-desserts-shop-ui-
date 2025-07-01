@@ -1,0 +1,105 @@
+/* src/components/DessertKarti.module.css (SIFIRDAN) */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.imageWrapperSelected {
+  border-color: var(--red);
+}
+
+.dessertImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Butonlar --- */
+.addToCartButton,
+.quantitySelector {
+  position: absolute;
+  bottom: 60px; /* Bu değeri resminizin yüksekliğine göre ayarlayabilirsiniz */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /* ... diğer buton stilleri ... */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 0.8rem 1.5rem;
+  width: 160px;
+  box-sizing: border-box;
+}
+.addToCartButton {
+  background-color: white;
+  border: 1px solid var(--rose-300);
+  cursor: pointer;
+  gap: 0.5rem;
+}
+.addToCartButton:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+.quantitySelector {
+  background-color: var(--red);
+  color: white;
+  justify-content: space-between;
+}
+.quantityButton {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- Bilgi Alanı --- */
+.info {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.category,
+.name,
+.price {
+  margin: 0.1rem 0;
+}
+.category {
+  font-size: 0.9rem;
+  color: var(--rose-500);
+}
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.price {
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* src/components/DessertKarti.module.css dosyasının EN ALTINA EKLEYİN */
+
+@media (max-width: 767px) {
+  .addToCartButton,
+  .quantitySelector {
+    /* Mobil için butonu biraz daha yukarı alalım */
+    bottom: 50px;
+  }
+}

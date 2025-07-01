@@ -1,0 +1,74 @@
+/* src/app/page.module.css (SADECE MASAÜSTÜ İÇİN SIFIRDAN) */
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem;
+
+  /* === MASAÜSTÜ ANA YAPI: SOL / SAĞ SÜTUN === */
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start; /* Sütunların tepeden hizalanmasını sağlar */
+}
+
+/* === SOL SÜTUN (TATLILAR) === */
+.dessertsSection {
+  flex: 1; /* Mevcut boşluğa göre esnemesini sağlar */
+}
+
+.dessertsSection h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* === KARTLARIN DİZİLDİĞİ GRİD === */
+.dessertsGrid {
+  display: grid;
+  /* MASAÜSTÜ İÇİN 3 SÜTUN */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem; /* Dikeyde 2.5rem, yatayda 2rem boşluk */
+}
+
+/* src/app/page.module.css dosyasının EN ALTINA EKLEYİN */
+
+/* ================================== */
+/*          TABLET GÖRÜNÜMÜ           */
+/* ================================== */
+@media (max-width: 1199px) {
+  /* 1200px'den küçük ekranlar için */
+
+  .container {
+    /* İki ana sütunu alt alta getir */
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+
+  .dessertsGrid {
+    /* Tatlı kartlarını 2'li grid yap */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dessertsSection h1 {
+    /* Başlık mobil için biraz büyük, küçültelim */
+    font-size: 2rem;
+  }
+}
+
+/* ================================== */
+/*           MOBİL GÖRÜNÜMÜ           */
+/* ================================== */
+@media (max-width: 767px) {
+  /* 768px'den küçük ekranlar için */
+
+  .container {
+    /* Kenar boşluklarını mobil için azalt */
+    padding: 1.5rem 1rem;
+  }
+
+  .dessertsGrid {
+    /* Tatlı kartlarını tek sütun yap */
+    grid-template-columns: 1fr;
+    gap: 3rem; /* Dikey boşluk mobil için biraz daha fazla olabilir */
+  }
+}
