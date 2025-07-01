@@ -1,4 +1,4 @@
-/* src/components/DessertKarti.module.css (SIFIRDAN) */
+/* src/components/DessertKarti.module.css */
 
 .card {
   position: relative;
@@ -94,7 +94,7 @@
   font-weight: 600;
 }
 
-/* src/components/DessertKarti.module.css dosyasının EN ALTINA EKLEYİN */
+
 
 @media (max-width: 767px) {
   .addToCartButton,
