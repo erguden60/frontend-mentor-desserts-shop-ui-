@@ -1,16 +1,7 @@
 /* src/components/Sepet.module.css */
 
 /* Renkleri ve genel değişkenleri projenizin global CSS dosyasında veya burada tanımlayabilirsiniz. */
-:root {
-  --red: #c73b0f;
-  --green: #268b44;
-  --rose-50: #fff7f5;
-  --rose-100: #ffede8;
-  --rose-300: #fcc2b4;
-  --rose-400: #ad8a85;
-  --rose-500: #87635a;
-  --rose-900: #3e3230;
-}
+
 
 /* ANA KART KONTEYNERİ */
 .cartSection {
