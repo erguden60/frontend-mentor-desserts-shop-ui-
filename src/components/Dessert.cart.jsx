@@ -48,7 +48,7 @@ const MinusIcon = () => (
   </svg>
 );
 
-// DÜZELTME: Fonksiyon parametreleri doğru şekilde listelendi.
+
 export default function DessertKarti({
   dessert,
   onAddToCart,
